@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMINDER APPLICATION</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./CSS/about.css">
+   
+    <style>
+        body{
+            background-image: url("./images/bg-texture.png");
+        }
+    </style>
+
+    <!--ADD FAVICON-->
+    <link rel="icon" type="image/x-icon" href="./images/education.svg">
+    
+    <!--ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!--GOOGLE FONTS(MONTSERRAT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=League+Spartan:wght@100&family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    
+    <header>
+        <div class="container header_container">
+            <div class="header__left">
+                <h1>WELCOME TO THE REMINDER APPLICATION</h1>
+                <div id="date">
+                    
+                </div>
+                <p>
+                    The Reminder Application serves as an invaluable tool for users seeking to efficiently manage their tasks and commitments.
+                    
+                </p>
+            </div>
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="./images/header.svg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!--=====================================================================-->
+
+
+    <section class="events">
+        <div class="events events_container">
+    
+            <div class="events_left">
+                
+                <article class="event">
+                    <span class="event_icon"><i class="uil uil-arrow"></i></span>
+                    <h5>SET REMINDER</h5>
+                    <p></p>
+                    <a href="/setreminder.html" class="btn btn-event">Set</a>
+                </article>
+    
+                <article class="event">
+                    <span class="event_icon"><i class="uil uil-edit"></i></span>
+                    <h5>MODIFY REMINDER</h5>
+                    <p> </p>
+                    <a href="modify.html" class="btn btn-event">Modify</a>
+                </article>
+    
+                <article class="event">
+                    <span class="event_icon"><i class="uil uil-arrow-growth"></i></span>
+                    <h5>DISABLE REMINDER</h5>
+                    <p></p>
+                    <a href="disable.html" class="btn btn-event">Disable</a>
+                </article>
+
+                <article class="event">
+                    <span class="event_icon"><i class="uil uil-arrow-growth"></i></span>
+                    <h5>DELETE REMINDER</h5>
+                    <p></p>
+                    <a href="delete.html" class="btn btn-event">Delete</a>
+                </article>
+
+
+                <article class="event">
+                    <span class="event_icon"><i class="uil uil-arrow-growth"></i></span>
+                    <h5>ENABLE REMINDER</h5>
+                    <p></p>
+                    <a href="enable.html" class="btn btn-event">Enable</a>
+                </article>
+
+
+                <article class="event">
+                    <span class="event_icon"><i class="uil uil-arrow-growth"></i></span>
+                    <h5>VIEW YOUR REMINDERS</h5>
+                    <p></p>
+                    <a href="courses.html" class="btn btn-event">View</a>
+                </article>
+
+
+            </div>
+    
+            
+        </div>
+    </section>
+    <script>
+        document.getElementById('date').innerHTML = `Today is ${new Date(Date.now()).toString().slice(0,15)}`
+    </script>
+
+
+
+</body>
